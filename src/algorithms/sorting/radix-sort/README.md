@@ -7,6 +7,13 @@ is required, but because integers can represent strings of characters
 (e.g., names or dates) and specially formatted floating point numbers, radix 
 sort is not limited to integers.
 
+*Where does the name come from?*
+
+In mathematical numeral systems, the *radix* or base is the number of unique digits,
+including the digit zero, used to represent numbers in a positional numeral system. 
+For example, a binary system (using numbers 0 and 1) has a radix of 2 and a decimal 
+system (using numbers 0 to 9) has a radix of 10.
+
 ## Efficiency
 
 The topic of the efficiency of radix sort compared to other sorting algorithms is 
@@ -24,6 +31,12 @@ would seem to make radix sort at most equally efficient as the best
 comparison-based sorts (and worse if keys are much longer than `log n`).
 
 ![Radix Sort](https://www.researchgate.net/publication/291086231/figure/fig1/AS:614214452404240@1523451545568/Simplistic-illustration-of-the-steps-performed-in-a-radix-sort-In-this-example-the.png)
+
+## Complexity
+
+| Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
+| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
+| **Radix sort**        | n * k           | n * k               | n * k               | n + k     | Yes       | k - length of longest key |
 
 ## References
 
